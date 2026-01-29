@@ -52,8 +52,8 @@
         tri_layer{
             if-layers = <1 2>;
             then-layer = <3>;
-        }
-    }
+        };
+    };
 
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
