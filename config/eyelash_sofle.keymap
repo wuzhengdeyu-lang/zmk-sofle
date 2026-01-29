@@ -46,6 +46,10 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
+&kscan0 {
+    wakeup-source;  // 关键：允许按键动作产生硬件中断来唤醒 MCU
+};
+
 / {
     conditional_layers{
         compatible = "zmk,conditional-layers";
