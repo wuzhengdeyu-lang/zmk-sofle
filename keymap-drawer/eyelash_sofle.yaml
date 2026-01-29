@@ -216,11 +216,11 @@ layers:
   - END
   - Ctl+F
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+V
+  - Ctl+C
   - PgUp
   - PgDn
   - '&VIM_NEWLINE'
-  - Ctl+C
+  - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
