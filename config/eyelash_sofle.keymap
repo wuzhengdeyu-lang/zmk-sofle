@@ -152,7 +152,7 @@
 
         layer_3 { // Vim_like Layer
             bindings = <                                                      // midline
-&kp LA(F4)  &kp LC(TAB)   &kp LC(LS(TAB)) &trans       &trans        &trans        &trans         &trans       &trans        &trans         &trans        &trans     &trans
+&kp LA(F4)  &kp LC(LS(TAB))   &kp LC(TAB) &trans       &trans        &trans        &trans         &trans       &trans        &trans         &trans        &trans     &trans
 &trans      &kp LC(W)     &kp LC(RIGHT)   &kp HOME     &kp END       &kp LC(F)     &trans         &kp LC(C)    &kp PAGE_UP   &kp PAGE_DOWN  &VIM_NEWLINE  &kp LC(V)     &trans
 &trans      &kp LC(A)     &kp LC(S)       &kp DELETE   &kp BACKSPACE &kp TAB       &trans         &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT     &kp LS(F10)    &trans
 &trans      &kp LC(Z)     &kp LC(X)       &kp LC(Y)    &trans        &kp LC(LEFT)  &trans         &kp LS(LEFT) &kp LS(DOWN)  &kp LS(UP)     &kp LS(RIGHT) &kp LA(TAB)     &trans
