@@ -197,8 +197,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   layer3:
   - Alt+F4
-  - Ctl+$$mdi:keyboard-tab$$
   - Ctl+Sft+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
