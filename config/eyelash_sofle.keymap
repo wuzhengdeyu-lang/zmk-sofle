@@ -121,7 +121,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "Base";
         };
 
         layer_1 { // Symbol Layer
@@ -133,48 +133,47 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &kp LS(ENTER)      &mkp LCLK        &trans           &trans           &trans       &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Symbol";
             sensor-bindings = <&scroll_encoder>;
         };
 
         layer_2 { // Function Layer
             bindings = <
-&bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4   &mmv MOVE_UP     &trans    &trans     &trans    &sys_reset  &bootloader  &soft_off
+&bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4   &mmv MOVE_UP     &trans    &trans     &trans    &trans  &trans  &to 4
 &trans     &kp PT_THUMB  &kp PT_SNAP   &kp PT_CROP  &kp PT_TOP    &kp PT_OCR     &mmv MOVE_DOWN  &trans    &trans     &trans    &trans      &trans       &trans
 &kp CAPS   &kp QQ_SH     &kp QQ_REC    &kp DELETE   &kp BACKSPACE &kp TAB        &mmv MOVE_LEFT  &kp PLUS  &kp MINUS  &kp ASTERISK &kp BSLH &kp EQUAL    &kp RBRC
 &trans     &kp WX_START  &kp QQ_START  &trans       &kp PT_CMD    &kp PT_RUN     &mmv MOVE_RIGHT &trans    &trans     &trans    &trans      &trans       &trans
 &trans     &trans        &trans        &trans       &trans        &kp LS(ENTER)  &mkp LCLK       &trans    &trans     &trans    &trans      &trans
     >;
 
-            display-name = "layer2";
+            display-name = "Function";
             sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 { // Vim_like Layer
             bindings = <                                                      // midline
-&kp LA(F4)  &kp LC(LS(TAB))   &kp LC(TAB) &trans       &trans        &trans        &trans         &trans       &trans        &trans         &trans        &trans     &trans
+&kp LA(F4)  &kp LC(LS(TAB))   &kp LC(TAB) &trans       &trans        &trans        &trans         &trans       &trans        &trans         &trans        &trans     &none
 &trans      &kp LC(W)     &kp LC(RIGHT)   &kp HOME     &kp END       &kp LC(F)     &trans         &kp LC(C)    &kp PAGE_UP   &kp PAGE_DOWN  &VIM_NEWLINE  &kp LC(V)     &trans
 &trans      &kp LC(A)     &kp LC(S)       &kp DELETE   &kp BACKSPACE &kp TAB       &trans         &kp LEFT     &kp DOWN      &kp UP         &kp RIGHT     &kp LS(F10)    &trans
 &trans      &kp LC(Z)     &kp LC(X)       &kp LC(Y)    &trans        &kp LC(LEFT)  &trans         &kp LS(LEFT) &kp LS(DOWN)  &kp LS(UP)     &kp LS(RIGHT) &kp LA(TAB)     &trans
 &trans      &trans        &trans          &trans       &trans        &trans        &trans         &trans       &trans        &trans         &trans        &trans   
             >;
 
-            display-name = "layer3";
+            display-name = "Vim_Like";
             sensor-bindings = <&scroll_encoder>;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&to 0     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8       &kp N9         &kp N0      &to 0
+&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I        &kp O          &kp P       &kp BSLH
+&kp ESC     &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K        &kp L          &kp SEMI    &kp APOS
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA    &kp DOT        &kp FSLH    &kp ENTER
+&kp C_MUTE  &kp LGUI   &kp LALT      &kp LCTRL     &kp SPACE   &kp ENTER    &kp ENTER        &kp SPACE  &kp ENTER      &kp RSHIFT   &kp RCTRL      &kp RALT
             >;
 
-            display-name = "layer4";
+            display-name = "One-Handed";
             sensor-bindings = <&scroll_encoder>;
         };
     };
 };
-
