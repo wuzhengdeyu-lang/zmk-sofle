@@ -2,8 +2,8 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 // 社交应用快捷键
-#define QQ_SH     LC(LA(A))      // QQ 截图
-#define QQ_REC    LC(LA(R))      // QQ 录屏
+#define QQ_SH     LG(LS(S))      // 截图
+#define QQ_REC    LG(LS(R))      // 录屏
 #define QQ_START  LC(LA(Z))      // 呼出 QQ
 #define WX_START  LC(LA(W))      // 呼出微信
 
