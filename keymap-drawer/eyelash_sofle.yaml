@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - LCtrl
   - $$mdi:apple-keyboard-option$$
-  - LGUI
+  - LGui
   - Symbol
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
